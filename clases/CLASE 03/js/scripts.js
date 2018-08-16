@@ -3,8 +3,13 @@ $(document).ready(function(){
 var searchStudent = function(name, list){
 
 	for (var i = 0; i< list.length ; i++){
-		if( )
+		if(list[i].firstname === name){
+			return [i]
+			
 	}
+			 return -1
+		}
+	
 };
 
 
@@ -35,14 +40,12 @@ var studentsList = [
 
 var button =  $("#enviar")
 
-var Im
-
 
 $("#enviar").click(function(){
-	console.log('hola')
+	//console.log('hola')
 	var name = $("#nombre").val();
 
 	searchStudent(name, studentsList)
 })
-console.log("dni")
+//console.log("dni")
 })
