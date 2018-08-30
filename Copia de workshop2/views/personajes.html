@@ -1,0 +1,41 @@
+<section id="caracters" style="width: 600px; height: 100%; border: 2px solid #000; background-color: #AAAAAA;">
+	
+	<table id="personajes"></table>
+</section>
+<script>
+	var personajes = $("#personajes");
+	var listaPersonajes = [];
+
+	getPersonajes();
+
+	function getPersonajes(){
+		$.ajax({
+		url:"https://swapi.co/api/people",
+		type:'get',
+		success: function(res){
+			crearTabla(res.results)
+		}
+		});
+	}
+	function crearTabla(pers) {
+		var tds = "";
+		for (var i=0; i < pers.length; i++) {
+			tds+="<td>"+pers[i].name+"</td>";
+			tds+="<td>"+pers[i].name+"</td>";
+			tds+="<td>"+pers[i].name+"</td>";
+			tds+="<td>"+pers[i].name+"</td>";
+
+			personajes.append("<tr>"+tds+"</tds>");
+
+			tds="";
+
+			 tds +="<td>" + "<button>" + "Save" + "</button>" + "</td>";
+
+
+
+		};
+		//document.getElementById("personajes").appendChild();
+
+	};
+
+</script>

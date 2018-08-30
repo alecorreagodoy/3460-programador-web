@@ -1,0 +1,25 @@
+* {box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	
+}
+body{
+	height: 100vh;
+	background-image: url(../imagenes/fondoSW.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+
+
+ 	}
+
+header nav {
+	font-family: "STARWARS";
+	font-size: 30px;
+	margin-top: 10px;
+    }
+
+   h1 #cat{
+    	font-size: 100px;
+    }
+ 
+
